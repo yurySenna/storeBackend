@@ -31,8 +31,8 @@ api.get('/produtos/:categorias', async (req, reply) => {
 });
 
 // Porta para Render
-const port = process.env.PORT || 3000;
-api.listen({ port, host: '0.0.0.0' })
+//const port = process.env.PORT || 3000;
+api.listen({ port: 3000, host: '0.0.0.0' })
   .then(() => console.log(`Servidor rodando na porta ${port}`))
   .catch(err => console.error(err));
 
